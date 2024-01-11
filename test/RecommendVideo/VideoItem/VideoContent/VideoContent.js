@@ -4,11 +4,11 @@ import classNames from "classnames/bind";
 import styles from './VideoContent.module.scss'
 const cx = classNames.bind(styles);
 
-function VideoContent() {
+function VideoContent({ data }) {
     return (
         <div className={cx('wrapper')}>
-            <VideoInfor ></VideoInfor>
-            <VideoAudio></VideoAudio>
+            <VideoInfor data={data}></VideoInfor>
+            <VideoAudio data={data}></VideoAudio>
         </div>
     );
 }

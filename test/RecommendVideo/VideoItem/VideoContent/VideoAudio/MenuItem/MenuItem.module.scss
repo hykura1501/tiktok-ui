@@ -1,0 +1,35 @@
+.wrapper {
+    width: 280px;
+    height: 280px;
+    padding: 8px 0;
+    overflow-y: auto;
+}
+.heightMenu {
+    height: 448px;
+}
+.item {
+    display: flex;
+    padding: 11px 16px;
+    margin-left: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+}
+.more {
+    background-color: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}

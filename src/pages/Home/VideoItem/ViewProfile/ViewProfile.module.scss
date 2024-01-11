@@ -1,0 +1,67 @@
+.wrapper {
+    padding: 20px;
+    width: 320px;
+}
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.follow-btn {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    color: rgb(22, 24, 35);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+    font-size: 1.4rem;
+}
+.name {
+    color: rgb(22, 24, 35);
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.statsUser {
+    display: flex;
+    // justify-content: space-between;
+    margin-top: 8px;
+}
+
+.statsText {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.statsDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.7rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.statsDesc + .statsText {
+    margin-left: 12px;
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.description {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}

@@ -4,27 +4,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames/bind";
 import Button from "~/components/Button";
 import styles from './VideoInfor.module.scss'
-import BoxProfile from '../../BoxProfile';
 const cx = classNames.bind(styles);
-const VideoInfor = forwardRef(({ className }, ref) => {
+const VideoInfor = forwardRef(({ className, data }, ref) => {
     return (
         <div ref={ref}
             className={cx('wrapper', className)}>
             <div className={cx('content')}>
-                <BoxProfile offset={[-80, 31]}>
-                    <div className={cx('infor')}>
-                        <h3 className={cx('username')}>
-                            <span >quynhditbu</span>
-                            {true && <FontAwesomeIcon className={cx('user-icon')} icon={faCheckCircle}></FontAwesomeIcon>}
-                        </h3>
-                        <h4 className={cx('name')}>
-                            Vi Thúy Quỳnh
-                        </h4>
-                    </div>
-                </BoxProfile>
+                <div className={cx('infor')}>
+                    <h3 className={cx('username')}>
+                        <span >{data.user.nickname}</span>
+                        {data.user.tick && <FontAwesomeIcon className={cx('user-icon')} icon={faCheckCircle}></FontAwesomeIcon>}
+                    </h3>
+                    <h4 className={cx('name')}>
+                        {`${data.user.first_name} ${data.user.last_name}`}
+                    </h4>
+                </div>
                 <Button small outline className={cx('follow-btn')}>Follow</Button>
                 <div className={cx('description')}>
-                    <a href="/" className={cx('tags')}>#xuhuong</a> viquynhiuanh
+                    <a href="/" className={cx('tags')}>#xuhuong</a> {data.description}
                 </div>
                 <a href="/" className={cx('music-infor')}>
                     <FontAwesomeIcon className={cx('music-icon')} icon={faMusic}></FontAwesomeIcon>

@@ -33,7 +33,7 @@ function AccountItem({ data }) {
                 render={renderPreview}
                 offset={[-8, -2]}
             >
-                <Link to={`@${data.nickname}`} className={cx('account-item')}>
+                <Link to={`/@/${data.nickname}`} className={cx('account-item')}>
                     <Image
                         className={cx('avatar')}
                         src={data.avatar}

@@ -25,7 +25,7 @@ function AccountPreview({ data }) {
             <div className={cx('infor')}>
                 <h4 className={cx('username')}>
                     <span>{data.nickname}</span>
-                    {true && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle}></FontAwesomeIcon>}
+                    {data.tick && <FontAwesomeIcon className={cx('check')} icon={faCheckCircle}></FontAwesomeIcon>}
                 </h4>
                 <span className={cx('name')}>{`${data.first_name} ${data.last_name}`}</span>
             </div>
