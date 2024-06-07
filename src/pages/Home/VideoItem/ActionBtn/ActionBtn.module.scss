@@ -1,0 +1,31 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    margin: 8px 0 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.active {
+    color: #fe2c55;
+}
+
+.icon {
+    height: 22px;
+    width: 22px;
+    object-fit: cover;
+}
+.action-count {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}

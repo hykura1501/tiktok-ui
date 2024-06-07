@@ -1,0 +1,76 @@
+.preview {
+    width: 320px;
+    padding: 20px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+    margin-bottom: -7.33px;
+}
+
+.infor {
+    flex: 1;
+    line-height: 1;
+}
+
+.username {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #161823;
+    line-height: 2.2rem;
+}
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+    font-size: 1.4rem;
+}
+.name {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #161823;
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+.title {
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    // justify-content: space-between;
+    margin-top: 12px;
+}
+
+.statsText {
+    font-weight: 700;
+    margin-right: 6px;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.statsDesc {
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 1.7rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.statsDesc + .statsText {
+    margin-left: 12px;
+}

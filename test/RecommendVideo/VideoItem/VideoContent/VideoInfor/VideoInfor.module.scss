@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    & .follow-btn {
+        position: absolute;
+        right: 0;
+        top: 10;
+    }
+}
+
+.content {
+    width: 510px;
+}
+.infor {
+    cursor: pointer;
+    &:hover .username {
+        text-decoration: underline;
+    }
+}
+
+.username {
+    font-weight: 700;
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 4px;
+}
+.user-icon {
+    margin-left: 4px;
+    color: #20d5ec;
+    font-size: 1.4rem;
+}
+.name {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 20px;
+    display: inline-block;
+    line-height: 28px;
+}
+.tags {
+    font-weight: 700;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.description {
+    // width: 510px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.music-infor {
+    // width: 510px;
+}
+.music-icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+}
+.music-name {
+    color: #161823;
+    font-weight: 600;
+    &:hover {
+        text-decoration: underline;
+    }
+}
